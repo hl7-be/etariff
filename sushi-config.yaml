@@ -3,8 +3,8 @@ fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.be.etariff
-name: Belgian etariff Profiles
-title: Belgian etariff Profiles
+name: Belgian MyCareNet eTariff Profiles
+title: Belgian MyCareNet eTariff Profiles
 status: draft
 version: 1.0.0
 copyrightYear: 2022+
