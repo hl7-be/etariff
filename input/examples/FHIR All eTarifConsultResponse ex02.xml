@@ -117,10 +117,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518t9"/>
+    <fullUrl value="urn:uuid:5330da7f-db68-4380-a265-d364aeed8653"/>
     <resource>
       <Coverage>
-        <id value="1dc5d974-5447-4afe-a4ab-57081ca518t9"/>
+      <id value="5330da7f-db68-4380-a265-d364aeed8653"/>
+      <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/etariff/StructureDefinition/be-etariff-coverage"/>
+        </meta>
+        
         <status value="active"/>
         <type>
 		  <coding>
@@ -200,14 +204,14 @@
         </requestor>
         <outcome value="complete"/>
         <addItem>
-          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-mycarenet-item-reimbursement">
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-item-reimbursement">
             <!-- reimbursement for item -->
 			<valueMoney>
 			    <value value="45.00"/>
 				<currency value="EUR"/>
 			</valueMoney>
 		  </extension>
-          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-mycarenet-item-patientfee">
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-item-patientfee">
             <!-- patientfee for item -->
 			<valueMoney>
 			    <value value="5.00"/>
@@ -275,7 +279,7 @@
         </addItem>
         <insurance>
 			<coverage>
-				<reference value="Coverage/1dc5d974-5447-4afe-a4ab-57081ca518t9"/>
+				<reference value="Coverage/5330da7f-db68-4380-a265-d364aeed8653"/>
 			</coverage> 
         </insurance>
       </ClaimResponse>
