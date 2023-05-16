@@ -19,7 +19,7 @@ Description: "Profile for the response of an eTariff in the MyCareNet flows."
     organization 1..2 MS and
     patient 0..1 MS and
     claimresponse 0..1 MS and
-    coverage 1..1 MS and
+    coverage 0..1 MS and
     operationOutcome 0..1 MS
 * entry[messageHeader].fullUrl 1..
 * entry[messageHeader].resource 1..
