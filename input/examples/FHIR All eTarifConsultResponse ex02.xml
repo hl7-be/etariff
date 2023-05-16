@@ -278,6 +278,8 @@
           </adjudication>
         </addItem>
         <insurance>
+			<sequence value="1"/>
+            <focal value="true"/>
 			<coverage>
 				<reference value="Coverage/5330da7f-db68-4380-a265-d364aeed8653"/>
 			</coverage> 
