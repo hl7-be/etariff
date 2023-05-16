@@ -34,7 +34,7 @@ Description: "Claim profile for use in the different Etariff flows from MyCareNe
 //* item.bodySite.extension contains BeExtLaterality named bodyLaterality 0..1 MS
 //* item.bodySite.extension[bodyLaterality].valueCoding from BeVSBasicLaterality
 * item.bodySite from be-vs-bodysite (required)
-* item.careTeamSequence 0..* MS
+* item.careTeamSequence 1..* MS
 * item.informationSequence 0..* MS
 * item.informationSequence MS
 * item.productOrService 1..1 MS
