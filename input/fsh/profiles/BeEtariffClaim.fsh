@@ -3,6 +3,7 @@ Parent: Claim
 Id: be-etariff-claim
 Title: "MyCareNet Etariff Claim BE profile"
 Description: "Claim profile for use in the different Etariff flows from MyCareNet"
+* obeys be-inv-gmf-holder and be-inv-related and be-inv-toothnumber
 * careTeam 1..* MS
 * careTeam.provider 1..1 MS
 * careTeam.provider.identifier 1..1 MS
