@@ -204,14 +204,14 @@
         </requestor>
         <outcome value="complete"/>
         <addItem>
-          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-item-reimbursement">
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-mycarenet-item-reimbursement">
             <!-- reimbursement for item -->
 			<valueMoney>
 			    <value value="45.00"/>
 				<currency value="EUR"/>
 			</valueMoney>
 		  </extension>
-          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-item-patientfee">
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-mycarenet-item-patientfee">
             <!-- patientfee for item -->
 			<valueMoney>
 			    <value value="5.00"/>
@@ -271,7 +271,7 @@
 			  </category>
 			  <reason>
 				  <coding>
-					<system value="https://www.ehealth.fgov.be/standards/fhir/etariff/CodeSystem/refusal-values"/>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/etariff/CodeSystem/be-cs-refusal-values"/>
 					<code value="001"/>
 				  </coding>
 			  </reason>

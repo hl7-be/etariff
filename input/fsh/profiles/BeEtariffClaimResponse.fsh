@@ -19,13 +19,14 @@ Description: "Claimresponse profile for use in the different Etariff flows from 
 * addItem.adjudication.category.coding.code 1..1 MS
 * addItem.adjudication.category.coding.system 1..1 MS
 * addItem.adjudication.extension[refusalDate] 0..1 MS
-* addItem.adjudication.extension[refusalDate].valueDateTime 1..1 MS
+* addItem.adjudication.extension[refusalDate].valueDate 1..1 MS
 * addItem.adjudication.extension[refusalId] 0..1 MS
 * addItem.adjudication.extension[refusalId].valueCodeableConcept 1..1 MS
 * addItem.adjudication.extension[refusalId].valueCodeableConcept.coding.code 1..1 MS
 * addItem.adjudication.extension[refusalId].valueCodeableConcept.coding 1..1 MS
 * addItem.adjudication.extension[refusalId].valueCodeableConcept.coding.system 1..1 MS
-* addItem.adjudication.reason from BeVSDecisionValues (extensible) 
+* addItem.adjudication.category from BeVSDecisionValues (extensible) 
+* addItem.adjudication.reason from BeVSRefusalValues (extensible)
 * addItem.extension[commitment] 0..1 MS
 * addItem.extension[commitment].valueString 1..1 MS
 * addItem.extension[patientFee] 0..1 MS
@@ -55,13 +56,6 @@ Description: "Claimresponse profile for use in the different Etariff flows from 
 * addItem.unitPrice.value 1..1 MS
 * created 1..1 MS
 * id 1..1 MS
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.rules = #open
-* identifier 1.. MS
-* identifier contains etariffid 1..1 MS
-* identifier[etariffid].system = $etariffid (exactly)
-* identifier[etariffid].value 1..1 MS
 * insurance 1..1 MS
 * insurance.coverage 1..1 MS
 * insurance.coverage only Reference(Coverage)

@@ -9,6 +9,6 @@ Alias: $claiminformationcategory = http://terminology.hl7.org/CodeSystem/claimin
 Alias: $annex-types = https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types
 Alias: $nihdi-physiotherapy-pathologysituationcode = https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode
 Alias: $decision-values = https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/decision-values
-Alias: $refusal-values = https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/refusal-values
+Alias: $refusal-values = https://www.ehealth.fgov.be/standards/fhir/etariff/CodeSystem/be-cs-refusal-values
 Alias: $agreement-errors = https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/agreement-errors
 Alias: $etariffid = https://www.mycarenet.be/etariff
