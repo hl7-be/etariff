@@ -199,7 +199,6 @@
           <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
         </insurer>
         <requestor>
-        <!-- serviceProvider -->
           <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
         </requestor>
         <outcome value="complete"/>
