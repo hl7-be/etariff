@@ -72,3 +72,4 @@ Description: "Claim profile for use in the different Etariff flows from MyCareNe
 * type.coding.system 1..1 MS
 * use = #predetermination
 * use 1..1 MS
+* total 0..0 
