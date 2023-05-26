@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ex01"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/etariff/StructureDefinition/be-etariff-request"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2015-07-14T11:15:33+02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b"/>
+    <resource>
+      <MessageHeader>
+        <id value="267b18ce-3d37-4581-9baa-6fada338038b"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-messageheader"/>
+        </meta>
+        <eventCoding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events"/>
+          <code value="etariff-consult"/>
+        </eventCoding>
+        <destination>
+          <name value="MyCareNet"/>
+          <endpoint value="MyCareNet"/>
+        </destination>
+        <sender>
+        <!-- sender party for etariff -->
+          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </sender>
+        <source>
+          <endpoint value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </source>
+        <focus>
+          <reference value="Claim/e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+    <resource>
+      <PractitionerRole>
+        <id value="62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+        </meta>
+        <practitioner>
+          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+            <code value="persphysician"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
+    <resource>
+      <Practitioner>
+        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+        </meta>
+        <identifier>
+        <!-- sender party for etariff -->
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="11530231003"/>
+        </identifier>
+        <name>
+          <family value="Durand"/>
+          <given value="Pierre"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>
+    <resource>
+      <Patient>
+        <id value="a52efcb6-1f81-4333-a115-d45bd3183686"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"/>
+        </meta>
+        <identifier>
+        <!-- patient -->
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"/>
+          <value value="70319666960"/>
+        </identifier>
+        <name>
+          <family value="Dupont"/>
+          <given value="Jean"/>
+        </name>
+        <gender value="male"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+    <resource>
+      <Claim>
+        <id value="e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+        <meta>
+        <!-- new profile to create for the request -->
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/etariff/StructureDefinition/be-etariff-claim"/>
+        </meta>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+            <code value="professional"/>
+          </coding>
+        </type>
+        <subType>
+        <!-- tariffType -->
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/etariff/CodeSystem/be-cs-etariff-types"/>
+            <code value="generalpractice"/>
+          </coding>
+        </subType>
+        <use value="predetermination"/>
+        <patient>
+          <reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>
+        </patient>
+        <created value="2015-07-14T11:15:30+02:00"/>
+        <enterer>
+          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </enterer>
+        <provider>
+        <!-- provider for item -->
+          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </provider>
+        <priority>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+            <code value="stat"/>
+          </coding>
+        </priority>
+        <careTeam>
+        <!-- auxiliaryProvider: gmf manager -->
+			<sequence value="1"/>
+			<provider>
+				<identifier>
+				  <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+				  <value value="15897310004"/>
+				</identifier>
+			</provider>
+			<role>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/claimcareteamrole"/>
+					<code value="other"/>
+				</coding>
+			</role>
+			<qualification>
+				<coding>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+					<code value="persphysician"/>
+				</coding>			
+			</qualification>
+        </careTeam>
+        <careTeam>
+        <!-- service - Provider -->
+			<sequence value="2"/>
+			<provider>
+				<identifier>
+				  <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+				  <value value="11530231003"/>
+				</identifier>
+			</provider>
+			<role>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/claimcareteamrole"/>
+					<code value="primary"/>
+				</coding>
+			</role>
+			<qualification>
+				<coding>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+					<code value="persphysician"/>
+				</coding>			
+			</qualification>
+        </careTeam>               
+        <insurance>
+          <sequence value="1"/>
+          <focal value="true"/>
+          <coverage>
+            <display value="use of mandatory insurance coverage, no further details provided here."/>
+          </coverage>
+        </insurance>
+        <item>
+          <sequence value="1"/>
+          <careTeamSequence value="1"/>
+          <careTeamSequence value="2"/>
+          <productOrService>
+          <!-- identifier for item -->
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-nomenclature"/>
+              <code value="101010"/>
+            </coding>
+          </productOrService>
+          <!-- date for item -->
+          <servicedDate value="2013-01-12"/>
+        </item>
+      </Claim>
+    </resource>
+  </entry>
+</Bundle>
