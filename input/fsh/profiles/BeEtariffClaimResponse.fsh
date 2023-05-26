@@ -58,7 +58,7 @@ Description: "Claimresponse profile for use in the different Etariff flows from 
 * id 1..1 MS
 * insurance 1..1 MS
 * insurance.coverage 1..1 MS
-* insurance.coverage only Reference(Coverage)
+* insurance.coverage only Reference(BeMyCareNetCoverage)
 * insurer 1..1 MS
 * insurer only Reference(BeOrganization)
 * outcome 1..1 MS
