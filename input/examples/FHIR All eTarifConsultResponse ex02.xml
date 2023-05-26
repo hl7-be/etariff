@@ -122,7 +122,7 @@
       <Coverage>
       <id value="5330da7f-db68-4380-a265-d364aeed8653"/>
       <meta>
-          <profile value="https://www.ehealth.fgov.be/standards/fhir/etariff/StructureDefinition/be-etariff-coverage"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/etariff/StructureDefinition/be-mycarenet-coverage"/>
         </meta>
         
         <status value="active"/>
