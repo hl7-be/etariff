@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ex01"/>
+  <id value="ex07"/>
   <meta>
     <profile value="https://www.ehealth.fgov.be/standards/fhir/etariff/StructureDefinition/be-etariff-request"/>
   </meta>

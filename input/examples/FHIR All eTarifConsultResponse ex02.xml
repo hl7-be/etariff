@@ -122,7 +122,7 @@
       <Coverage>
       <id value="5330da7f-db68-4380-a265-d364aeed8653"/>
       <meta>
-          <profile value="https://www.ehealth.fgov.be/standards/fhir/etariff/StructureDefinition/be-mycarenet-coverage"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-mycarenet-coverage"/>
         </meta>
         
         <status value="active"/>
@@ -150,20 +150,20 @@
         <class>
 			<type>
 			  <coding>
-				<system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-				<code value="subplan"/>
+				<system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1"/>
+				<code value="110"/>
 			  </coding>
 			</type>
-			<value value="CT1:110"/>
+			<value value="applicable"/>
         </class>
         <class>
 			<type>
 			  <coding>
-				<system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-				<code value="subplan"/>
+				<system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2"/>
+				<code value="150"/>
 			  </coding>
 			</type>
-			<value value="CT2:150"/>
+			<value value="applicable"/>
         </class>
       </Coverage>
     </resource>

@@ -12,7 +12,7 @@ Description: "Claimresponse profile for use in the different Etariff flows from 
     BeExtEtariffAdjudicationRefusalservicedate named refusalDate 0..1 MS
 
 * ^status = #active
-* addItem 1..1 MS
+* addItem 1..* MS
 * addItem.adjudication 1..1 MS
 * addItem.adjudication.category 1..1 MS
 * addItem.adjudication.category.coding 1..1 MS
