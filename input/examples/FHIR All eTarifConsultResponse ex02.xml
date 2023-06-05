@@ -150,20 +150,20 @@
         <class>
 			<type>
 			  <coding>
-				<system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1"/>
-				<code value="110"/>
+				<system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+				<code value="plan"/>
 			  </coding>
 			</type>
-			<value value="applicable"/>
+			<value value="110"/>
         </class>
         <class>
 			<type>
 			  <coding>
-				<system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2"/>
-				<code value="150"/>
+				<system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+				<code value="subplan"/>
 			  </coding>
 			</type>
-			<value value="applicable"/>
+			<value value="150"/>
         </class>
       </Coverage>
     </resource>

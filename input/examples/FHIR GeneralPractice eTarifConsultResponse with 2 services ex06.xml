@@ -157,10 +157,10 @@
 			<type>
 			  <coding>
 				<system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-				<code value="subplan"/>
+				<code value="plan"/>
 			  </coding>
 			</type>
-			<value value="CT1:110"/>
+			<value value="110"/>
         </class>
         <class>
 			<type>
@@ -169,7 +169,7 @@
 				<code value="subplan"/>
 			  </coding>
 			</type>
-			<value value="CT2:110"/>
+			<value value="110"/>
         </class>
       </Coverage>
     </resource>
