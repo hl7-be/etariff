@@ -157,10 +157,14 @@
 			<type>
 			  <coding>
 				<system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
-				<code value="plan"/>
+				<code value="subplan"/>
 			  </coding>
 			</type>
-			<value value="110"/>
+			<value value="110">
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-system">
+            
+			<valueUri value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1"/>
+      </extension></value>
         </class>
         <class>
 			<type>
@@ -169,7 +173,11 @@
 				<code value="subplan"/>
 			  </coding>
 			</type>
-			<value value="110"/>
+			<value value="110">
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-system">
+            
+			<valueUri value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2"/>
+      </extension></value>
         </class>
       </Coverage>
     </resource>
