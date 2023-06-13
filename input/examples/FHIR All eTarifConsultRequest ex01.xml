@@ -23,7 +23,7 @@
           <endpoint value="MyCareNet"/>
         </destination>
         <sender>
-        <!-- serviceProvider -->
+        <!-- sender party for etariff -->
           <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </sender>
         <source>
@@ -64,7 +64,7 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
         </meta>
         <identifier>
-        <!-- serviceProvider for attest (and in this case also the provider for item)-->
+        <!-- sender party for etariff -->
           <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
           <value value="19234011004"/>
         </identifier>
@@ -113,7 +113,7 @@
           </coding>
         </type>
         <subType>
-        <!-- attestationType -->
+        <!-- tariffType -->
           <coding>
             <system value="https://www.ehealth.fgov.be/standards/fhir/etariff/CodeSystem/be-cs-etariff-types"/>
             <code value="generalpractice"/>

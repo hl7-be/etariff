@@ -121,6 +121,9 @@
     <resource>
       <Coverage>
         <id value="5330da7f-db68-4380-a265-d364aeed8653"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-mycarenet-coverage"/>
+        </meta>
         <status value="active"/>
         <type>
 		  <coding>
@@ -151,10 +154,10 @@
 			  </coding>
 			</type>
 			<value value="110">
-      <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-system">
-            
-			<valueUri value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1"/>
-      </extension></value>
+				<extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-system">
+				  <valueUri value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1"/>
+				</extension>
+            </value>
         </class>
         <class>
 			<type>
@@ -163,10 +166,11 @@
 				<code value="subplan"/>
 			  </coding>
 			</type>
-			<value value="110"><extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-system">
-            
-			<valueUri value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2"/>
-      </extension></value>
+			<value value="150">
+				<extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-system">
+				  <valueUri value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2"/>
+				</extension>
+            </value>
         </class>
       </Coverage>
     </resource>

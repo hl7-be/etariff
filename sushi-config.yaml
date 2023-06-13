@@ -85,4 +85,27 @@ parameters:
 
 
 resources:
-
+  Bundle/ex01:
+    name: All eTarifConsultRequest  
+  Bundle/ex02:
+    name: All eTarifConsultResponse  
+  Bundle/ex03:
+    name: GeneralPractice eTarifConsultRequest  
+  Bundle/ex04:
+    name: GeneralPractice eTarifConsultResponse  
+  Bundle/ex05:
+    name: GeneralPractice with 2 services eTarifConsultRequest  
+  Bundle/ex06:
+    name: GeneralPractice with 2 services eTarifConsultResponse  
+  Bundle/ex07:
+    name: Dentistry eTarifConsultRequest  
+  Bundle/ex08:
+    name: Dentistry eTarifConsultResponse  
+  Bundle/ex09:
+    name: Dentistry within Hospital eTarifConsultRequest  
+  Bundle/ex10:
+    name: Dentistry within Hospital eTarifConsultResponse  
+  Bundle/ex11:
+    name: Dentistry with tarif and refusal eTarifConsultResponse  
+  Bundle/ex12:
+    name: All eTarifReject  
