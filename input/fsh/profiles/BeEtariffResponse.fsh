@@ -41,7 +41,7 @@ Description: "Profile for the response of an eTariff in the MyCareNet flows."
 * entry[claimresponse].resource only BeEtariffClaimResponse
 * entry[operationOutcome].fullUrl 1..
 * entry[operationOutcome].resource 1..
-* entry[operationOutcome].resource only OperationOutcome
+* entry[operationOutcome].resource only BeMyCareNetOperationOutcome
 * entry[operationOutcome].resource.issue.details.coding from BeVSEtariffErrors (extensible)
 * entry[coverage].fullUrl 1..
 * entry[coverage].resource 1..
