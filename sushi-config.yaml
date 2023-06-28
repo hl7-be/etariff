@@ -10,10 +10,20 @@ version: 1.0.0
 copyrightYear: 2022+
 releaseLabel: STU
 jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
+# The publisher can be a single item or a list, each with a name and
+# optional url and/or email. The first publisher's name will be used
+# as IG.publisher.  The contact details and/or additional publishers
+# will be translated into IG.contact values.
+publisher:
+  name: eHealth Platform
+  url: http://www.ehealth.fgov.be/
+  email: support@be-ehealth-standards.atlassian.net
 dependencies:
   hl7.fhir.be.core: current
   hl7.fhir.be.core-clinical: current
   hl7.fhir.be.nihdi-terminology: current
+
+  hl7.fhir.be.mycarenet: current
   
 
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -73,4 +83,41 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'  
 
+
 resources:
+  Bundle/ex01:
+    name: ex01
+    description: All eTarifConsultRequest  
+  Bundle/ex02:
+    name: ex02
+    description: All eTarifConsultResponse  
+  Bundle/ex03:
+    name: ex03
+    description: GeneralPractice eTarifConsultRequest  
+  Bundle/ex04:
+    name: ex04
+    description: GeneralPractice eTarifConsultResponse  
+  Bundle/ex05:
+    name: ex05
+    description: GeneralPractice with 2 services eTarifConsultRequest  
+  Bundle/ex06:
+    name: ex06
+    description: GeneralPractice with 2 services eTarifConsultResponse  
+  Bundle/ex07:
+    name: ex07
+    description: Dentistry eTarifConsultRequest  
+  Bundle/ex08:
+    name: ex08
+    description: Dentistry eTarifConsultResponse  
+  Bundle/ex09:
+    name: ex09
+    description: Dentistry within Hospital eTarifConsultRequest  
+  Bundle/ex10:
+    name: ex10
+    description: Dentistry within Hospital eTarifConsultResponse  
+  Bundle/ex11:
+    name: ex11
+    description: Dentistry with tarif and refusal eTarifConsultResponse  
+  Bundle/ex12:
+    name: ex12
+    description: All eTarifReject  
