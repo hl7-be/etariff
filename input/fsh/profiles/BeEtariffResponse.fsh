@@ -14,8 +14,8 @@ Description: "Profile for the response of an eTariff in the MyCareNet flows."
 * entry ^slicing.rules = #open
 * entry contains
     messageHeader 1..1 MS and
-    practitioner 0..1 MS and
-    practitionerRole 0..1 MS and
+    practitioner 0..* MS and
+    practitionerRole 0..* MS and
     organization 1..2 MS and
     patient 0..1 MS and
     claimresponse 0..1 MS and
