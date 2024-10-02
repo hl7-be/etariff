@@ -17,5 +17,4 @@ Issues:  __https://github.com/ig/hl7-be/etariff/issues__
 Kanban board:  __https://github.com/ig/hl7-be/etariff/projects/1__  
 
 
-
 ---
